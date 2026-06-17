@@ -1,0 +1,80 @@
+.imanage {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+}
+.imanage .container {
+  position: relative;
+  width: 90%;
+}
+.imanage__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 650px;
+}
+.imanage__content {
+  max-width: 600px;
+}
+.imanage__content span {
+  color: #00d7ff;
+  font-weight: 700;
+}
+.imanage__content h2 {
+  margin-top: 20px;
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.1;
+}
+.imanage__content p {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+.imanage__visual {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imanage__progress {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 20;
+}
+.imanage__progress span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d4d4d4;
+  transition: all 0.3s ease;
+}
+.imanage__progress .active {
+  background: #00d7ff;
+  transform: scale(1.5);
+}
+
+@media (max-width: 991px) {
+  .imanage__wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .imanage__content h2 {
+    font-size: 42px;
+  }
+  .imanage__visual {
+    height: 350px;
+  }
+  .imanage__progress {
+    display: none;
+  }
+}

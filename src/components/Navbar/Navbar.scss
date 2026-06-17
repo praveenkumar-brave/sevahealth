@@ -1,0 +1,109 @@
+@use "../../styles/variables" as *;
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+
+  width: 100%;
+
+  z-index: 999;
+
+  backdrop-filter: blur(12px);
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.75
+  );
+
+  border-bottom: 1px solid
+    rgba(0, 0, 0, 0.05);
+
+  &__wrapper {
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 28px;
+
+    font-weight: 800;
+
+    color: $dark;
+  }
+
+  &__menu {
+    display: flex;
+
+    gap: 40px;
+
+    a {
+      color: $text;
+
+      font-weight: 500;
+    }
+  }
+
+  &__cta {
+    border: none;
+
+    padding: 14px 24px;
+
+    background: $primary;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+  }
+
+  &__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    &__menu {
+      display: none;
+
+      position: absolute;
+
+      top: 80px;
+
+      left: 0;
+
+      width: 100%;
+
+      background: white;
+
+      flex-direction: column;
+
+      padding: 30px;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    &__toggle {
+      display: block;
+
+      border: none;
+
+      background: transparent;
+
+      font-size: 28px;
+    }
+
+    &__cta {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@use "../../styles/variables" as *;
+
+.why-seva {
+  padding: 180px 0;
+
+  &__header {
+    text-align: center;
+
+    span {
+      color: $primary;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin-top: 20px;
+
+      font-size: clamp(
+        3rem,
+        5vw,
+        5rem
+      );
+    }
+  }
+
+  &__grid {
+    margin-top: 80px;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+    gap: 30px;
+  }
+}
+
+.why-card {
+  padding: 40px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  border: 1px solid #eee;
+
+  transition: .35s;
+
+  &:hover {
+    transform:
+      translateY(-8px);
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    margin-top: 20px;
+
+    color: $muted;
+  }
+}
+
+@media(max-width:991px) {
+  .why-seva__grid {
+    grid-template-columns:1fr;
+  }
+}

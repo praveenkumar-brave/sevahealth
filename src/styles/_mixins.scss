@@ -1,0 +1,14 @@
+@mixin container {
+    width: min(100% - 48px, 1400px);
+    margin-inline: auto;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin section-spacing {
+    padding: 120px 0;
+  }

@@ -1,0 +1,24 @@
+.cta {
+  padding: 120px 0;
+}
+.cta__card {
+  padding: 100px;
+  border-radius: 40px;
+  text-align: center;
+  color: #000;
+}
+.cta__card h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+.cta__card p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.cta__card button {
+  margin-top: 40px;
+  border: none;
+  background: #ecf0f1;
+  padding: 18px 36px;
+  border-radius: 999px;
+  cursor: pointer;
+}

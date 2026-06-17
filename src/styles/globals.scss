@@ -1,0 +1,33 @@
+
+// body{margin:0;font-family:Arial,sans-serif;background:#fff}
+// section{padding:100px 8%}
+// .hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center}
+// .video-card{height:500px;background:#ddd;border-radius:20px;display:flex;align-items:center;justify-content:center}
+// .pinned-slider{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center}
+// .lottie-placeholder{height:400px;background:#eafcff;display:flex;align-items:center;justify-content:center}
+// .highlight p{font-size:3rem;line-height:1.4}
+// .highlight span{color:#999}
+
+
+@use "./reset";
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./animations";
+
+body {
+  font-family:
+    Inter,
+    sans-serif;
+
+  color: $text;
+
+  overflow-x: hidden;
+}
+
+.container {
+  @include container;
+}
+
+section {
+  position: relative;
+}

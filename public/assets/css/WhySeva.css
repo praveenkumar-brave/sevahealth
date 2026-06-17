@@ -1,0 +1,44 @@
+.why-seva {
+  padding: 180px 0;
+}
+.why-seva__header {
+  text-align: center;
+}
+.why-seva__header span {
+  color: #00d7ff;
+  font-weight: 700;
+}
+.why-seva__header h2 {
+  margin-top: 20px;
+  font-size: clamp(3rem, 5vw, 5rem);
+}
+.why-seva__grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.why-card {
+  padding: 40px;
+  background: white;
+  border-radius: 24px;
+  border: 1px solid #eee;
+  transition: 0.35s;
+}
+.why-card:hover {
+  transform: translateY(-8px);
+}
+.why-card h3 {
+  font-size: 28px;
+}
+.why-card p {
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+@media (max-width: 991px) {
+  .why-seva__grid {
+    grid-template-columns: 1fr;
+  }
+}

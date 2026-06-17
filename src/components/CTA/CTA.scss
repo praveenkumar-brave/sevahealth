@@ -1,0 +1,45 @@
+@use "../../styles/variables" as *;
+
+.cta {
+  padding: 120px 0;
+
+  &__card {
+    padding: 100px;
+
+    border-radius: 40px;
+
+    // background: $primary;
+
+    text-align: center;
+
+    color: #000;
+
+    h2 {
+      font-size: clamp(
+        2.5rem,
+        5vw,
+        4.5rem
+      );
+    }
+
+    p {
+      margin-top: 20px;
+
+      font-size: 20px;
+    }
+
+    button {
+      margin-top: 40px;
+
+      border: none;
+
+      background: #ecf0f1;
+
+      padding: 18px 36px;
+
+      border-radius: 999px;
+
+      cursor: pointer;
+    }
+  }
+}

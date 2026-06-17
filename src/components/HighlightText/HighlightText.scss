@@ -1,0 +1,37 @@
+.highlight {
+    position: relative;
+  
+    min-height: 100vh;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    background: #fff;
+  
+    overflow: hidden;
+  
+    &__content {
+      max-width: 1200px;
+  
+      margin: 0 auto;
+  
+      text-align: center;
+  
+      font-size: clamp(
+        2rem,
+        4vw,
+        5rem
+      );
+  
+      line-height: 1.3;
+  
+      font-weight: 600;
+    }
+  }
+  
+  .highlight-word {
+    color: #cbd5e1;
+  
+    transition: color 0.3s;
+  }
