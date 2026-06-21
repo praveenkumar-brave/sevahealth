@@ -9,7 +9,7 @@ export default function CoreSlide({
 
         <span>
           {/* {slide.category} */}
-          <img src="/public/assets/images/pro-icon1.svg" alt="check" />
+          <img src="/assets/images/pro-icon1.svg" alt="check" />
         </span>
 
         <h2>

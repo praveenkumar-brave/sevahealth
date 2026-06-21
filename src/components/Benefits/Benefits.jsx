@@ -109,7 +109,7 @@ import {
                <div className="card">
                 <div className="wrapper">
                   <div className="card-image">
-                    <img src="public/assets/images/card-img1.svg" alt="Reclaimed Time" />
+                    <img src="/assets/images/card-img1.svg" alt="Reclaimed Time" />
                   </div>
                   <div className="content">
                     <p className="title">Reclaimed Time</p>
@@ -124,7 +124,7 @@ import {
             <div className="card">
                 <div className="wrapper">
                   <div className="card-image">
-                    <img src="public/assets/images/card-img2.svg" alt="Reclaimed Time" />
+                    <img src="public/assets/images/card-img2.svg" alt="Massive Adoption" />
                   </div>
                   <div className="content">
                     <p className="title">Massive Adoption</p>
@@ -139,7 +139,7 @@ import {
             <div className="card">
                 <div className="wrapper">
                   <div className="card-image">
-                    <img src="public/assets/images/card-img3.svg" alt="Reclaimed Time" />
+                    <img src="/assets/images/card-img3.svg" alt="Unmatched Scale" />
                   </div>
                   <div className="content">
                     <p className="title">Unmatched Scale</p>
@@ -163,7 +163,7 @@ import {
                     <p></p>
                   </div>
                   <div className="card-image">
-                    <img src="public/assets/images/card-img4.svg" alt="Reclaimed Time" />
+                    <img src="public/assets/images/card-img4.svg" alt="Deep Healthcare" />
                   </div>
                   <button className="card-btn">Get Started</button>
                 </div>
@@ -179,7 +179,7 @@ import {
                     <p></p>
                   </div>
                   <div className="card-image">
-                    <img src="public/assets/images/card-img5.svg" alt="Reclaimed Time" />
+                    <img src="/assets/images/card-img5.svg" alt="Flexible" />
                   </div>
                   <button className="card-btn">Get Started</button>
                 </div>

@@ -8,7 +8,7 @@ export default function IManageSlide({
       <div className="imanage__content">
 
         <span>
-          <img src="/public/assets/images/pro-icon.svg" alt="check" />
+          <img src="/assets/images/pro-icon.svg" alt="check" />
         </span>
 
         <h2>
