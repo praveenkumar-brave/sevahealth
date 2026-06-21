@@ -124,7 +124,7 @@ import {
             <div className="card">
                 <div className="wrapper">
                   <div className="card-image">
-                    <img src="public/assets/images/card-img2.svg" alt="Massive Adoption" />
+                    <img src="/assets/images/card-img2.svg" alt="Massive Adoption" />
                   </div>
                   <div className="content">
                     <p className="title">Massive Adoption</p>
@@ -163,7 +163,7 @@ import {
                     <p></p>
                   </div>
                   <div className="card-image">
-                    <img src="public/assets/images/card-img4.svg" alt="Deep Healthcare" />
+                    <img src="/assets/images/card-img4.svg" alt="Deep Healthcare" />
                   </div>
                   <button className="card-btn">Get Started</button>
                 </div>
