@@ -8,11 +8,10 @@ const expertiseSlides = [
     id: 1,
     category: "Core Expertise",
 
-    title: "Quality Management",
-
+    title: "Audit Readiness",
+    subtitletxt:"& Risk Management",
     description:
-      "Centralize policies, procedures, audits and documentation to maintain quality standards across facilities.",
-
+      "We help healthcare agencies strengthen compliance processes and improve preparedness for state reviews and operational audits. Our approach supports better documentation management, risk awareness, and regulatory alignment.",
     animation: qualityAnimation,
   },
 
@@ -20,11 +19,10 @@ const expertiseSlides = [
     id: 2,
     category: "Core Expertise",
 
-    title: "Incident Management",
-
+    title: "Secure Information",
+    subtitletxt:"Management",
     description:
-      "Track incidents, investigations and corrective actions with complete accountability.",
-
+      "We help healthcare agencies strengthen compliance processes and improve preparedness for state reviews and operational audits. Our approach supports better documentation management, risk awareness, and regulatory alignment.",
     animation: incidentAnimation,
   },
 
@@ -32,10 +30,10 @@ const expertiseSlides = [
     id: 3,
     category: "Core Expertise",
 
-    title: "Compliance Monitoring",
-
+    title: "Smart Agency",
+    subtitletxt:"Analytics",
     description:
-      "Gain visibility into compliance performance and readiness across the organization.",
+      "We provide clear operational insights that help leadership teams make informed staffing and performance decisions. Our analytics approach supports better planning, visibility, and operational efficiency.",
 
     animation: complianceAnimation,
   },
@@ -44,10 +42,10 @@ const expertiseSlides = [
     id: 4,
     category: "Core Expertise",
 
-    title: "Operational Excellence",
-
+    title: "Operational",
+    subtitletxt:"Consulting",
     description:
-      "Use real-time operational intelligence to improve efficiency and reduce risk.",
+      "We work with healthcare agencies to improve workflows and align daily operations with long-term organizational goals. Our consulting focuses on efficiency, scalability, and sustainable operational improvements.",
 
     animation: excellenceAnimation,
   },

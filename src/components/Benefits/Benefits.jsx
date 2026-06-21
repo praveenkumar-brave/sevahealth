@@ -90,7 +90,7 @@ import {
   
           <div className="benefits__header">
   
-            <span>
+            <span className="hero__eyebrow">
               Challenges
             </span>
   
@@ -105,15 +105,105 @@ import {
           </div>
   
           <div className="benefits__grid">
-  
-            {benefits.map(
+            <div className="benefits__flex-top">
+               <div class="card">
+                <div class="wrapper">
+                  <div class="card-image">
+                    <img src="public/assets/images/card-img1.svg" alt="Reclaimed Time" />
+                  </div>
+                  <div class="content">
+                    <p class="title">Reclaimed Time</p>
+                    <p class="title price">Drastically reduces the time it takes direct care staff to write, find, and file webforms, putting those hours directly back into patient care.</p>
+                    {/* <p class="title price old-price">&nbsp;$6</p> */}
+                    <p></p>
+                  </div>
+                  <button class="card-btn">Get Started</button>
+                </div>
+             {/* <p class="tag">-50%</p> */}
+            </div>
+            <div class="card">
+                <div class="wrapper">
+                  <div class="card-image">
+                    <img src="public/assets/images/card-img2.svg" alt="Reclaimed Time" />
+                  </div>
+                  <div class="content">
+                    <p class="title">Massive Adoption</p>
+                    <p class="title price">85% active daily usage among internal staff, proving that our intuitive design eliminates the "software learning curve”.</p>
+                    {/* <p class="title price old-price">&nbsp;$6</p> */}
+                    <p></p>
+                  </div>
+                  <button class="card-btn">Get Started</button>
+                </div>
+             {/* <p class="tag">-50%</p> */}
+            </div>
+            <div class="card">
+                <div class="wrapper">
+                  <div class="card-image">
+                    <img src="public/assets/images/card-img3.svg" alt="Reclaimed Time" />
+                  </div>
+                  <div class="content">
+                    <p class="title">Unmatched Scale</p>
+                    <p class="title price">Trusted by agencies processing over 10,000 compliance forms weekly.</p>
+                    {/* <p class="title price old-price">&nbsp;$6</p> */}
+                    <p></p>
+                  </div>
+                  <button class="card-btn">Get Started</button>
+                </div>
+             {/* <p class="tag">-50%</p> */}
+            </div>
+            </div>
+          <div className="benefits__flex-botm">
+            <div class="card">
+                <div class="wrapper">
+                 
+                  <div class="content">
+                    <p class="title">Deep Healthcare Expertise</p>
+                    <p class="title price">Built on decades of real-world experience</p>
+                    {/* <p class="title price old-price">&nbsp;$6</p> */}
+                    <p></p>
+                  </div>
+                  <div class="card-image">
+                    <img src="public/assets/images/card-img4.svg" alt="Reclaimed Time" />
+                  </div>
+                  <button class="card-btn">Get Started</button>
+                </div>
+             {/* <p class="tag">-50%</p> */}
+            </div>
+            <div class="card">
+                <div class="wrapper">
+                  {/* <div class="card-image">III</div> */}
+                  <div class="content">
+                    <p class="title">Flexible Delivery Model</p>
+                    <p class="title price">The right mix of experts, when you need them</p>
+                    {/* <p class="title price old-price">&nbsp;$6</p> */}
+                    <p></p>
+                  </div>
+                  <div class="card-image">
+                    <img src="public/assets/images/card-img5.svg" alt="Reclaimed Time" />
+                  </div>
+                  <button class="card-btn">Get Started</button>
+                </div>
+             {/* <p class="tag">-50%</p> */}
+            </div>
+            
+          </div>
+          <div className="hero__actions">
+
+<button
+  className="outline"
+>
+  Request Demo
+</button>
+
+</div>
+            {/* {benefits.map(
               (item) => (
                 <BenefitCard
                   key={item.id}
                   {...item}
                 />
               )
-            )}
+            )} */}
   
           </div>
   

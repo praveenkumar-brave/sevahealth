@@ -8,8 +8,8 @@ const slides = [
     id: 1,
 
     title:
-      "Digital eBinders & Continuous Compliance Monitoring",
-
+      "Digital eBinders & ",
+    subtitletxt:"Continuous Compliance Monitoring",
     description:
       "We pull your data out of the filing cabinet. iManage centralizes all IPP/ISP web forms, medical reports, and incident tracking into secure digital eBinders. When auditors arrive, you don't hand them a box of messy files—you grant them secure, read-only access.",
 
@@ -21,8 +21,8 @@ const slides = [
     id: 2,
 
     title:
-      "Automated Credentialing & Training Hub.",
-
+      "Automated Credentialing ",
+    subtitletxt:"& Training Hub.",
     description:
       "Never miss a renewal date again. Our Training & Development module automatically tracks staff certifications, sends expiration alerts, and even hosts online exams directly within the platform.",
 
@@ -34,8 +34,8 @@ const slides = [
     id: 3,
 
     title:
-      "Proactive QA Ticketing & Incident Tracking",
-
+      "Proactive QA Ticketing &",
+    subtitletxt:"Incident Tracking",
     description:
       "Log incidents the second they happen. Our internal QA ticketing system alerts the right administrators instantly",
 
@@ -47,8 +47,8 @@ const slides = [
     id: 4,
 
     title:
-      "Smart Care Scheduling",
-
+      "Smart Care",
+    subtitletxt:"Scheduling",
     description:
       "Replace vulnerable physical files with a secure, instant view of client records.",
 

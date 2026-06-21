@@ -1,7 +1,8 @@
 .video-section {
-    padding: 100px 5vw;
+    padding: 0px 5vw 100px;
   
     overflow: hidden;
+    margin-top: -100px;
   
     &__card {
       border-radius: 32px;

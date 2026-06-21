@@ -31,7 +31,7 @@ import {
         const trigger = ScrollTrigger.create({
           trigger: section,
       
-          start: "top top",
+          start: "bottom 120%",
       
           end: `+=${slides.length * 1500}`,
       
@@ -109,21 +109,21 @@ import {
         className="core"
       >
         <div className="container">
-        {/* <div className="benefits__header">
+        <div className="benefits__header">
   
-  <span>
-    Challenges
-  </span>
-
-  <h2 style={{ color: "#fff" }}>
-  Our Core <span className="title-highlight">Expertise</span>
-  </h2>
-
-  <p style={{ marginBottom: "100px" }}>
-  We provide comprehensive tools and consulting designed specifically for healthcare operations
-  </p>
-
-</div> */}
+            <span className="hero__eyebrow">
+            Expert
+            </span>
+  
+            <h2>
+            Our Core <span className="title-highlight">Expertise</span>
+            </h2>
+  
+            <p>
+            We provide comprehensive tools and consulting designed specifically for healthcare operations
+            </p>
+  
+          </div>
           <div className="core__wrapper">
             
             <CoreSlide

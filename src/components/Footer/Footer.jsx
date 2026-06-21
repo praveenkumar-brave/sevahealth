@@ -17,6 +17,7 @@ export default function Footer() {
             <p>
                 
             SEVA Health understands the unique challenges of person-centered care. Whether your agency provides Residential Care, Day Programs, In-Home Support, Respite Care, or Rehabilitation Services, we know your workflows. We provide tailored strategies, secure systems, and ongoing support to protect your agency from risks and ensure long-term, sustainable growth.
+
             </p>
 
           </div>
@@ -36,7 +37,6 @@ export default function Footer() {
             </a>
 
           </div>
-
           <div>
 
             <h4>
@@ -44,7 +44,22 @@ export default function Footer() {
             </h4>
 
             <a href="#">
+            Privacy Policy
+            </a>
+
+            <a href="#">
             Terms & Conditions
+            </a>
+
+            </div>
+          <div>
+
+            <h4>
+            Support
+            </h4>
+
+            <a href="#">
+            FAQ's
             </a>
 
             <a href="#">

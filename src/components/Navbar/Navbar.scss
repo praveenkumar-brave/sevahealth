@@ -54,13 +54,14 @@
   &__cta {
     border: none;
 
-    padding: 14px 24px;
+    padding: 12px 24px;
 
-    background: $primary;
+    background: #0D0D12;
 
     border-radius: 999px;
 
     cursor: pointer;
+    color: #fff;
   }
 
   &__toggle {

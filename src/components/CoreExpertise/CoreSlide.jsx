@@ -8,11 +8,12 @@ export default function CoreSlide({
       <div className="core__content">
 
         <span>
-          {slide.category}
+          {/* {slide.category} */}
+          <img src="/public/assets/images/pro-icon1.svg" alt="check" />
         </span>
 
         <h2>
-          <span className="title-highlight">{slide.title}</span>
+          {slide.title}<br/><span className="title-highlight">{slide.subtitletxt}</span>
         </h2>
 
         <p>

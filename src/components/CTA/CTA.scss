@@ -2,6 +2,9 @@
 
 .cta {
   padding: 120px 0;
+  background: url(/public/assets/images/cta-bg.svg) no-repeat;
+  background-size: contain;
+  background-position: center center;
 
   &__card {
     padding: 100px;
@@ -20,12 +23,21 @@
         5vw,
         4.5rem
       );
+      &span.title-highlight {
+        font-size: clamp(
+          2.5rem,
+          5vw,
+          4.5rem
+        );
+      }
     }
 
     p {
       margin-top: 20px;
-
       font-size: 20px;
+      line-height: 36px;
+      max-width: 80%;
+      margin: 30px auto 0;
     }
 
     button {

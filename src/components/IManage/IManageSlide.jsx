@@ -8,11 +8,12 @@ export default function IManageSlide({
       <div className="imanage__content">
 
         <span>
-          iManage
+          <img src="/public/assets/images/pro-icon.svg" alt="check" />
+           
         </span>
 
         <h2>
-          {slide.title}
+          {slide.title} <br/><span className="title-highlight">{slide.subtitletxt}</span>
         </h2>
 
         <p>

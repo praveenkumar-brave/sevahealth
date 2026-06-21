@@ -2,9 +2,9 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #060317;
+  background: transparent;
   position: relative;
-  border-radius: 5px;
+  padding: 80px 0px !important;
 }
 .core.container {
   position: relative;
@@ -21,14 +21,16 @@
 }
 .core__content span {
   color: #00d7ff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 48px;
 }
 .core__content h2 {
   margin-top: 20px;
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(3rem, 3vw, 5rem);
+  line-height: 1.1;
+  font-weight: 400;
   line-height: 1.05;
+  color: #fff;
 }
 .core__content p {
   margin-top: 30px;
@@ -64,6 +66,30 @@
 .core__progress .active {
   background: #00d7ff;
   transform: scale(1.5);
+}
+
+.core .container {
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  display: inline-flex;
+  flex-direction: column;
+  background: #060317;
+  padding: 100px 0;
+  border-radius: 32px;
+  background: #060317 url(/public/assets/images/hero-bg.svg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.core .container .benefits__header h2 {
+  color: #fff;
+}
+
+.core .container .benefits__header p {
+  color: #ddd;
+  max-width: 80%;
+  margin: 20px auto 150px;
 }
 
 @media (max-width: 991px) {

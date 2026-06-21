@@ -28,10 +28,11 @@
 }
 .navbar__cta {
   border: none;
-  padding: 14px 24px;
-  background: #00d7ff;
+  padding: 12px 24px;
+  background: #0D0D12;
   border-radius: 999px;
   cursor: pointer;
+  color: #fff;
 }
 .navbar__toggle {
   display: none;

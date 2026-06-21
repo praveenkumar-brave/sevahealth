@@ -28,7 +28,7 @@ import {
         const trigger = ScrollTrigger.create({
           trigger: section,
       
-          start: "top top",
+          start: "bottom bottom",
       
           end: `+=${slides.length * 1500}`,
       
@@ -70,11 +70,34 @@ import {
     }, [activeSlide]);
   
     return (
-      <section
-        ref={sectionRef}
-        className="imanage"
-      >
+      
+      
+      <section className="imanage" ref={sectionRef}>
         <div className="container">
+        <div>
+        <div className="benefits__header">
+  
+  <span className="hero__eyebrow">
+  Our Product
+  </span>
+
+  <h2>
+  <span className="title-highlight">iManage</span> <br/>
+  All-in-One Compliance Platform
+  </h2>
+
+  <p>
+  We pull your data out of the filing cabinet. iManage centralizes all IPP/ISP web forms, medical reports, and incident tracking into secure digital eBinders. When auditors arrive, you don't hand them a box of messy files—you grant them secure, read-only access.
+  </p>
+
+</div>
+      </div>
+          </div>
+        
+        <div className="container" >
+
+          
+          
           <div
             className="imanage__wrapper"
             key={activeSlide}
