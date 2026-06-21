@@ -1,5 +1,5 @@
 
-import btnicon from "@/assets/images/arrow.svg";
+// import btnicon from "@/assets/images/arrow.svg";
 
 const whySeva = [
   {
@@ -9,7 +9,7 @@ const whySeva = [
     description:
       "Continuous care with constant updates, incidents, and daily activities.",
     descriptionextended:"Everything stays organized, searchable, and instantly accessible—whenever you need it." ,
-    btnicon: "btnicon"
+    // btnicon: "btnicon"
     }, 
   {
     id: 2,
@@ -18,7 +18,7 @@ const whySeva = [
     description:
       "Manage audits, documentation and corrective actions from one platform.",
     descriptionextended:"Stay on top of participation, performance, and outcomes effortlessly.",
-    btnicon: btnicon
+    // btnicon: btnicon
 
   },
   {
@@ -28,7 +28,7 @@ const whySeva = [
     description:
       "Maintain continuous readiness for inspections and audits.",
     descriptionextended:"Capture visits, notes, and updates in real time—right from the field.",
-    btnicon: btnicon
+    // btnicon: btnicon
 
   },
 
@@ -39,7 +39,7 @@ const whySeva = [
     description:
       "Designed for healthcare systems with multiple locations and teams.",
     descriptionextended:"Track improvement, therapy sessions, and outcomes with confidence.",
-    btnicon: btnicon
+    // btnicon: btnicon
 
   }
 ];
