@@ -9,7 +9,6 @@ export default function IManageSlide({
 
         <span>
           <img src="/public/assets/images/pro-icon.svg" alt="check" />
-           
         </span>
 
         <h2>

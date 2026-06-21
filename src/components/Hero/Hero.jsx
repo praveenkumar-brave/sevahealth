@@ -54,7 +54,7 @@ export default function Hero() {
   <div className="hero__bg">
     {/* <ThreeHexGrid /> */}
     {/* <ThreeHeroBlob /> */}
-    {/* <AntigravityField pattern="mixed"/> */}
+    <AntigravityField pattern="mixed"/>
   </div>
 </section>
   );
