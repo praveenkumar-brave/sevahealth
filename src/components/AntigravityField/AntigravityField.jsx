@@ -3,9 +3,9 @@ import {
     useRef,
   } from "react";
   
-  import particleConfig from "./particleConfig.jsx";
+  import particleConfig from "./particleConfig";
   
-  import ParticleEngine from "./ParticleEngine.jsx";
+  import ParticleEngine from "./ParticleEngine";
   
   export default function AntigravityField() {
     const canvasRef =
