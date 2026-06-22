@@ -6,6 +6,7 @@
   align-items: center;
   overflow: hidden;
   background: #fff;
+  min-width: 100% !important;
 }
 .imanage .container {
   position: relative;
