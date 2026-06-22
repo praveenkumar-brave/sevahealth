@@ -1,0 +1,39 @@
+.page-section {
+  padding: 100px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-grid form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-grid form input,
+.contact-grid form textarea {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.contact-grid form button {
+  padding: 16px 30px;
+  border: none;
+  border-radius: 12px;
+  background: #00b8ff;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

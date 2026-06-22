@@ -1,9 +1,15 @@
 import { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 import "./Navbar.scss";
 
 export default function Navbar() {
+
   const [menuOpen, setMenuOpen] =
+    useState(false);
+
+  const [servicesOpen, setServicesOpen] =
     useState(false);
 
   return (
@@ -11,45 +17,105 @@ export default function Navbar() {
 
       <div className="container navbar__wrapper">
 
-        <a
-          href="/"
+        <Link
+          to="/"
           className="navbar__logo"
         >
-           <img src="/logo.png" alt="SEVA Health Logo" />
-        </a>
+          <img
+            src="/logo.png"
+            alt="SEVA Health Logo"
+          />
+        </Link>
 
         <nav
           className={`navbar__menu ${
             menuOpen ? "active" : ""
           }`}
         >
-          <a href="#">
+
+          <Link to="/">
             Home
-          </a>
+          </Link>
 
-          <a href="#">
+          <Link to="/about">
             About Us
-          </a>
+          </Link>
 
-          <a href="#">
+          <Link to="/imanage">
             iManage
-          </a>
+          </Link>
 
-          <a href="#">
-            Services
-          </a>
+          <div
+            className="navbar__dropdown"
+            onMouseEnter={() =>
+              setServicesOpen(true)
+            }
+            onMouseLeave={() =>
+              setServicesOpen(false)
+            }
+          >
+
+            <button
+              className="navbar__dropdown-btn"
+            >
+              Services
+            </button>
+
+            {servicesOpen && (
+
+              <div className="navbar__dropdown-menu">
+
+                <Link
+                  to="/services/residential-care"
+                >
+                  Residential Care
+                </Link>
+
+                <Link
+                  to="/services/day-program"
+                >
+                  Day Program Services
+                </Link>
+
+                <Link
+                  to="/services/in-home-support"
+                >
+                  In-Home Support
+                </Link>
+
+                <Link
+                  to="/services/rehabilitation"
+                >
+                  Rehabilitation
+                </Link>
+
+                <Link
+                  to="/services/respite-care"
+                >
+                  Respite Care
+                </Link>
+
+              </div>
+
+            )}
+
+          </div>
+
         </nav>
 
-        <button
+        <Link
+          to="/contact"
           className="navbar__cta"
         >
           Contact
-        </button>
+        </Link>
 
         <button
           className="navbar__toggle"
           onClick={() =>
-            setMenuOpen(!menuOpen)
+            setMenuOpen(
+              !menuOpen
+            )
           }
         >
           ☰

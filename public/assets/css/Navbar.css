@@ -62,3 +62,26 @@
     display: none;
   }
 }
+.navbar__dropdown {
+  position: relative;
+}
+.navbar__dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+.navbar__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 250px;
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}

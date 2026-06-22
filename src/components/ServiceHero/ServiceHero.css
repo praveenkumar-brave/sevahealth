@@ -1,0 +1,29 @@
+.service-hero {
+  padding: 180px 0 120px;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  text-align: center;
+}
+
+.service-hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-hero__content span {
+  color: #00b8ff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-hero__content h1 {
+  margin-top: 20px;
+  font-size: 72px;
+  line-height: 1.1;
+}
+
+.service-hero__content p {
+  margin-top: 24px;
+  font-size: 22px;
+  color: #64748b;
+  line-height: 1.8;
+}
