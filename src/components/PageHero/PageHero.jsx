@@ -1,26 +1,35 @@
 import "./PageHero.scss";
 
 export default function PageHero({
-  eyebrow,
   title,
+  subtitle,
   description,
+  buttonText,
 }) {
   return (
     <section className="page-hero">
 
       <div className="container">
 
-        <span>
-          {eyebrow}
-        </span>
+        <div className="page-hero__content">
 
-        <h1>
-          {title}
-        </h1>
+          <h1>{title}</h1>
 
-        <p>
-          {description}
-        </p>
+          {subtitle && (
+            <h3>{subtitle}</h3>
+          )}
+
+          {description && (
+            <p>{description}</p>
+          )}
+
+          {buttonText && (
+            <button>
+              {buttonText}
+            </button>
+          )}
+
+        </div>
 
       </div>
 

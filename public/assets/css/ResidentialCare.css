@@ -1,0 +1,150 @@
+@charset "UTF-8";
+.residential-page {
+  padding-top: 80px;
+}
+
+.service-intro {
+  padding: 120px 0;
+}
+.service-intro .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.service-intro span {
+  color: #22d3ee;
+  font-weight: 600;
+}
+.service-intro h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.service-intro p {
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.service-intro button {
+  border: 1px solid #22d3ee;
+  background: transparent;
+  padding: 14px 32px;
+  border-radius: 999px;
+}
+.service-intro__images {
+  display: flex;
+  gap: 20px;
+}
+.service-intro__images img {
+  width: 30%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.service-capabilities {
+  padding: 120px 0;
+}
+.service-capabilities .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.service-capabilities img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 30px 30px #000;
+}
+.service-capabilities h2 {
+  margin-bottom: 2rem;
+}
+.service-capabilities ul {
+  list-style: none;
+  padding: 0;
+}
+.service-capabilities li {
+  margin-bottom: 1.25rem;
+  color: #475569;
+  position: relative;
+  padding-left: 30px;
+}
+.service-capabilities li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #22d3ee;
+}
+
+.service-benefits {
+  padding: 120px 0;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.benefit-card {
+  background: #f8fafc;
+  padding: 40px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+.benefit-card:hover {
+  transform: translateY(-8px);
+}
+.benefit-card h3 {
+  margin-bottom: 1rem;
+}
+.benefit-card p {
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+.benefit-card a {
+  color: #22d3ee;
+}
+
+.why-matters {
+  padding: 120px 0;
+}
+.why-matters .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.why-matters__content h2 {
+  margin-bottom: 1rem;
+}
+.why-matters__content p {
+  color: #64748b;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+.why-matters__content button {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 999px;
+}
+.why-matters__image img {
+  width: 100%;
+  max-width: 450px;
+}
+
+@media (max-width: 991px) {
+  .service-intro .container,
+  .service-capabilities .container,
+  .why-matters .container {
+    grid-template-columns: 1fr;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-intro__images {
+    justify-content: center;
+  }
+}

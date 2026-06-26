@@ -1,29 +1,11 @@
-import ServiceHero from "@/components/ServiceHero/ServiceHero";
-import ServiceContent from "@/components/ServiceContent/ServiceContent";
-import CTA from "@/components/CTA/CTA";
+import ServiceTemplate from "@/components/ServiceTemplate/ServiceTemplate";
 
-import { services } from "@/data/servicesData";
-
-// import "./RespiteCare.scss";
+import respiteCareData from "@/data/services/respiteCareData";
 
 export default function RespiteCare() {
-
-  const data =
-    services.respiteCare;
-
   return (
-    <>
-      <ServiceHero
-        title={data.title}
-        description={data.description}
-      />
-
-      <ServiceContent
-        overview={data.overview}
-        features={data.features}
-      />
-
-      <CTA />
-    </>
+    <ServiceTemplate
+      {...respiteCareData}
+    />
   );
 }

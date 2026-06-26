@@ -1,39 +1,11 @@
-import ServiceHero
-from "@/components/ServiceHero/ServiceHero";
+import ServiceTemplate from "@/components/ServiceTemplate/ServiceTemplate";
 
-import ServiceContent
-from "@/components/ServiceContent/ServiceContent";
-
-import CTA
-from "@/components/CTA/CTA";
-
-import {
-  services
-}
-from "@/data/servicesData";
-
-// import "./DayProgram.scss";
+import dayProgramData from "@/data/services/dayProgramData";
 
 export default function DayProgram() {
-
-  const data =
-    services.dayProgram;
-
   return (
-    <>
-
-      <ServiceHero
-        title={data.title}
-        description={data.description}
-      />
-
-      <ServiceContent
-        overview={data.overview}
-        features={data.features}
-      />
-
-      <CTA />
-
-    </>
+    <ServiceTemplate
+      {...dayProgramData}
+    />
   );
 }

@@ -1,5 +1,5 @@
 const particleConfig = {
-    count:80,
+    count:30,
   
     particleOpacity: 1, // 0 → invisible, 1 → fully visible
 
