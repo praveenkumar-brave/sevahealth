@@ -1,6 +1,7 @@
 .feature-benefits {
   padding: 0px 0;
 }
+
 .feature-benefits .container {
   max-width: 1200px;
   margin: auto;
@@ -18,15 +19,18 @@
   min-height: 240px;
   transition: all 0.3s ease;
 }
+
 .benefit-card:hover {
   transform: translateY(-6px);
 }
+
 .benefit-card h3 {
   font-size: 16px;
   margin-bottom: 16px;
   color: #1f2937;
   font-weight: 500;
 }
+
 .benefit-card p {
   color: #6b7280;
   line-height: 1.7;
@@ -78,6 +82,7 @@
     min-height: auto;
   }
 }
+
 .benefit-cards {
   display: flex;
   align-items: center;
@@ -89,14 +94,17 @@
   background: white;
   transition: all 0.3s ease;
 }
+
 .benefit-cards:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
 }
+
 .benefit-cards p {
   flex: 1;
   margin: 0;
 }
+
 .benefit-cards span {
   width: 40px;
   height: 40px;

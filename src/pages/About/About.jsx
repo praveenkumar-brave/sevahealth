@@ -5,10 +5,79 @@ import CTA from "@/components/CTA/CTA";
 import PageHero from "@/components/PageHero/PageHero";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import FeatureGrid from "@/components/FeatureGrid/FeatureGrid";
-
+import AboutMasonry from "@/components/AboutMasonry/AboutMasonry";
 import "./About.scss";
 
 export default function About() {
+    const leftCards = [
+
+        {
+    
+            badge:"99% Guaranteed",
+    
+            title:"Compliance,\nSimplified",
+    
+            description:
+            "Continuous monitoring and structured tracking of regulatory requirements.",
+    
+            // graphic:<GradientCard/>,
+    
+        },
+    
+        {
+    
+            title:"Risk,\nManaged\nProactively",
+    
+            description:
+            "Identifying, assessing and mitigating risks before they become operational barriers.",
+    
+            badges:[
+                "24/7 Audit Ready",
+                "IPP/ISP Web Forms",
+                "85% Active Management"
+            ],
+    
+            // image:doctorImage
+    
+        },
+    
+        {
+    
+            title:"Get all the benefits now",
+    
+            button:"Book Demo",
+    
+            className:"cta-card"
+    
+        }
+    
+    ];
+    
+    const rightCards=[
+    
+        {
+    
+            title:"Data,\nActivated",
+    
+            description:
+            "Transforming datasets into decision-ready insights.",
+    
+            // graphic:<OrbitAnimation/>
+    
+        },
+    
+        {
+    
+            title:"Information,\nUnified",
+    
+            description:
+            "Creating seamless systems that enable secure data sharing.",
+    
+            // graphic:<FloatingCards/>
+    
+        }
+    
+    ];
   const values = [
     {
       title: "Integrity",
@@ -179,6 +248,13 @@ export default function About() {
             <FeatureGrid
               items={values}
             />
+            <AboutMasonry
+
+leftCards={leftCards}
+
+rightCards={rightCards}
+
+/>
 
           </div>
 

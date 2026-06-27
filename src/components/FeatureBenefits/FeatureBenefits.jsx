@@ -1,19 +1,30 @@
-import "./FeatureGrid.scss";
+import "./FeatureBenefits.scss";
 
-export default function FeatureGrid({
+
+export default function FeatureBenefits({
   cards = [],
+  
 }) {
   return (
-    <section className="feature-grid">
+    <section className="feature-benefits">
       <div className="container">
 
         {cards.map((card, index) => (
+          
           <div
+          
             key={index}
-            className={`feature-card ${card.className}`}
+            className={`benefit-card ${card.className}`}
           >
             <div className="content">
-
+            {card.icon && (
+              <div className="benefit-icon">
+                <img
+                  src={card.icon}
+                  alt={card.title}
+                />
+              </div>
+            )}
               <h3>{card.title}</h3>
 
               <p>{card.description}</p>
@@ -28,14 +39,7 @@ export default function FeatureGrid({
 
             </div>
 
-            {card.icon && (
-              <div className="icon">
-                <img
-                  src={card.icon}
-                  alt={card.title}
-                />
-              </div>
-            )}
+            
           </div>
         ))}
 

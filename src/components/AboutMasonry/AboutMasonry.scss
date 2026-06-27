@@ -1,0 +1,28 @@
+.about-masonry {
+
+    padding: 120px 0;
+
+    .container{
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        gap:70px;
+
+        align-items:start;
+
+    }
+
+    &__left,
+    &__right{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:45px;
+
+    }
+
+}

@@ -1,0 +1,96 @@
+.masonry-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+
+
+.content{
+
+    padding:20px 0;
+
+}
+
+h2{
+
+    font-size:56px;
+
+    line-height:1;
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    color:#6b7280;
+
+    line-height:1.7;
+
+}
+
+.badge{
+
+    display:inline-flex;
+
+    padding:8px 20px;
+
+    border:1px solid #ddd;
+
+    border-radius:100px;
+
+}
+
+.badge-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:30px;
+
+}
+
+.pill{
+
+    width:max-content;
+
+    padding:10px 22px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:999px;
+
+}
+
+button{
+
+    margin-top:25px;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+}
+}

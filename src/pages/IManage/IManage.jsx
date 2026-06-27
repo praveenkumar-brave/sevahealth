@@ -3,7 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import CTA from "@/components/CTA/CTA";
 
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
-import FeatureGrid from "@/components/FeatureGrid/FeatureGrid";
+import FeatureBenefits from "@/components/FeatureBenefits/FeatureBenefits";
 import IManageHero from "@/components/IManageHero/IManageHero";
 import Lottie from "lottie-react";
 import animationData from "@/assets/lottie/imange.json";
@@ -18,28 +18,32 @@ export default function IManagePage() {
       title: "Digital eBinders",
       description:
         "Digital Client Binders (Your Secure Records",
-        icon:"/assets/images/im-fea-icon1.svg"
+        icon:"/assets/images/im-fea-icon1.svg",
+        className:"features-container"
     },
 
     {
       title: "Compliance Monitoring",
       description:
         "Ready-to-Use Clinical & Daily Forms",
-         icon:"/assets/images/im-fea-icon2.svg"
+         icon:"/assets/images/im-fea-icon2.svg",
+        className:"features-container"
     },
 
     {
       title: "Incident Reporting",
       description:
         "Care Scheduling & Deadline Tracking",
-         icon:"/assets/images/im-fea-icon3.svg"
+         icon:"/assets/images/im-fea-icon3.svg",
+        className:"features-container"
     },
 
     {
       title: "Audit Readiness",
       description:
         "Staff Training & Credential Tracking",
-         icon:"/assets/images/im-fea-icon4.svg"
+         icon:"/assets/images/im-fea-icon4.svg",
+        className:"features-container"
     },
 
     
@@ -95,8 +99,8 @@ export default function IManagePage() {
               description="iManage replaces the chaos with a secure, easy-to-use digital system. We automate your compliance tracking and centralize your daily operations so your leadership team can confidently face state audits and your staff can focus on delivering exceptional care."
             />
 
-            <FeatureGrid
-              items={features}
+            <FeatureBenefits
+              cards={features}
             />
 
           </div>

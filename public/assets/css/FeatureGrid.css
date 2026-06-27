@@ -1,66 +1,77 @@
-.feature-grid {
+.feature-benefits {
   padding: 80px 0;
 }
-.feature-grid .container {
+.feature-benefits .container {
+  max-width: 1200px;
+  margin: auto;
   display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 24px;
 }
-.feature-grid .feature-card {
+
+.benefit-card {
   border-radius: 24px;
   padding: 32px;
-  min-height: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 240px;
+  transition: all 0.3s ease;
 }
-.feature-grid .feature-card.card-1 {
-  grid-column: 1/span 3;
+.benefit-card:hover {
+  transform: translateY(-6px);
 }
-.feature-grid .feature-card.card-2 {
-  grid-column: 4/span 7;
-}
-.feature-grid .feature-card.card-3 {
-  grid-column: 1/span 7;
-}
-.feature-grid .feature-card.card-4 {
-  grid-column: 8/span 3;
-}
-.feature-grid .feature-card h3 {
-  font-size: 28px;
+.benefit-card h3 {
+  font-size: 32px;
   margin-bottom: 16px;
+  color: #1f2937;
 }
-.feature-grid .feature-card p {
-  color: #666;
-  margin-bottom: 10px;
-  max-width: 300px;
-}
-.feature-grid .feature-card a {
-  display: inline-block;
-  margin-top: 15px;
-  color: #2bbbd8;
-  font-weight: 600;
-}
-.feature-grid .feature-card .icon img {
-  width: 120px;
-}
-.feature-grid .bg-teal {
-  background: #cbf9f1;
-}
-.feature-grid .bg-purple {
-  background: #d8d8f9;
-}
-.feature-grid .bg-orange {
-  background: #f9dfd3;
-}
-.feature-grid .bg-pink {
-  background: #fdf0f4;
-}
-@media (max-width: 991px) {
-  .feature-grid .container {
-    grid-template-columns: 1fr;
-  }
+.benefit-card p {
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 320px;
 }
 
-.feature-card.reverse + .feature-card {
-  grid-column: 2/3;
+.try-btn {
+  margin-top: 20px;
+  border: none;
+  background: transparent;
+  color: #6366f1;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.benefit-icon {
+  font-size: 90px;
+  opacity: 0.4;
+}
+
+.teal {
+  background: #cbf9f1;
+}
+
+.purple {
+  background: #d8d8f9;
+}
+
+.orange {
+  background: #f9dfd3;
+}
+
+.pink {
+  background: #fdf0f4;
+}
+
+.wide-card {
+  min-height: 280px;
+}
+
+@media (max-width: 991px) {
+  .feature-benefits .container {
+    grid-template-columns: 1fr;
+  }
+  .benefit-card {
+    min-height: auto;
+  }
 }
