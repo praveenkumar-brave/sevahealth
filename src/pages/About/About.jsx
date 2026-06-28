@@ -6,6 +6,14 @@ import PageHero from "@/components/PageHero/PageHero";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import FeatureGrid from "@/components/FeatureGrid/FeatureGrid";
 import AboutMasonry from "@/components/AboutMasonry/AboutMasonry";
+import Lottie from "lottie-react";
+import about from "@/assets/lottie/about.json";
+import aboutimg from "/assets/images/about-img2.svg";
+import doctorImage from "/assets/images/about-img4.svg";
+import doctorsImage from "/assets/images/about-img3.svg";
+import infoImage from "/assets/images/about-img5.svg";
+
+
 import "./About.scss";
 
 export default function About() {
@@ -18,9 +26,12 @@ export default function About() {
             title:"Compliance,\nSimplified",
     
             description:
-            "Continuous monitoring and structured tracking of regulatory requirements.",
-    
-            // graphic:<GradientCard/>,
+            "Continuous monitoring and structured tracking of regulatory requirements—so nothing falls through the cracks.",
+            image:aboutimg,
+            // graphic:aboutimg,
+            imagePosition: "top",
+
+            className: "card-one",
     
         },
     
@@ -29,7 +40,7 @@ export default function About() {
             title:"Risk,\nManaged\nProactively",
     
             description:
-            "Identifying, assessing and mitigating risks before they become operational barriers.",
+            "Identifying, assessing, and mitigating risks before they become operational barriers.",
     
             badges:[
                 "24/7 Audit Ready",
@@ -37,7 +48,9 @@ export default function About() {
                 "85% Active Management"
             ],
     
-            // image:doctorImage
+            image:doctorImage,
+            imagePosition: "bottom",
+            className: "card-two",
     
         },
     
@@ -46,6 +59,7 @@ export default function About() {
             title:"Get all the benefits now",
     
             button:"Book Demo",
+            graphic: true,
     
             className:"cta-card"
     
@@ -60,9 +74,11 @@ export default function About() {
             title:"Data,\nActivated",
     
             description:
-            "Transforming datasets into decision-ready insights.",
+            "Transforming complex datasets into meaningful, decision-ready insights that drive performance and accountability.",
     
-            // graphic:<OrbitAnimation/>
+            image:doctorsImage,
+            imagePosition: "top",
+            className: "card-three",
     
         },
     
@@ -71,8 +87,10 @@ export default function About() {
             title:"Information,\nUnified",
     
             description:
-            "Creating seamless systems that enable secure data sharing.",
+            " Creating seamless systems that enable secure, efficient data sharing across platforms and stakeholders.",
     
+            image:infoImage,
+            className: "card-four",
             // graphic:<FloatingCards/>
     
         }
@@ -112,12 +130,49 @@ export default function About() {
 
         <PageHero
           title="About SEVA Health"
-          subtitle="Transforming Healthcare Through Intelligent Compliance"
-          description="SEVA Health empowers healthcare organizations with modern compliance, quality management and operational excellence solutions."
+          subtitle="Transforming Healthcare Through Intelligent Compliance & Data"
+          description="At SEVA Health, we help organizations navigate the complexity of healthcare governance, risk, and compliance with clarity and confidence. We combine deep industry expertise with modern technology to deliver intelligent solutions that turn fragmented data into actionable insight."
           buttonText="Contact Us"
         />
 
         {/* WHO WE ARE */}
+        <section className="why-matters">
+
+          <div className="container">
+
+            <div className="why-matters__content">
+
+              <h2>
+              Who We Are
+              </h2>
+
+              <p>
+              SEVA Health is a healthcare IT and consulting company focused on Governance, Risk, and Compliance (GRC). As a minority-owned business backed by decades of combined leadership experience, we bring a unique blend of domain expertise, technical capability, and strategic thinking.
+              </p>
+              {/* <button>
+              Learn more
+              </button> */}
+            <img src="/assets/images/about-img1.svg" alt="icon"/> 
+
+
+            </div>
+
+            <div className="why-matters__image">
+
+           
+
+                {/* <Lottie
+                animationData={about}
+                loop
+                autoplay
+                className="about__lottie lottie-icon"
+                /> */}
+           <img src="/assets/images/about-img.svg" alt="icon"/> 
+            </div>
+
+          </div>
+
+        </section>
 
         <section className="about-company">
 
@@ -126,34 +181,34 @@ export default function About() {
             <div className="about-company__content">
 
               <span>
-                Who We Are
+                Seva Health
               </span>
 
               <h2>
-                Healthcare Technology
-                Built For Modern Providers
+              Transforming Healthcare Through Intelligent Compliance & Data
               </h2>
 
               <p>
-                SEVA Health was created to simplify healthcare compliance,
-                incident management, quality assurance and operational
-                performance across healthcare organizations.
+              At SEVA Health, we help organizations navigate the complexity of healthcare governance, risk, and compliance with clarity and confidence. We combine deep industry expertise with modern technology to deliver intelligent solutions that turn fragmented data into actionable insight.
               </p>
 
               <p>
-                Our mission is to replace fragmented systems with a single
-                platform that improves visibility, accountability and care
-                quality.
+              In an environment where regulations evolve rapidly and data volumes grow exponentially, we enable organizations to stay compliant, operate efficiently, and make better decisions—faster.
               </p>
 
             </div>
 
             <div className="about-company__image">
 
-              <img
-                src="/about/about-team.jpg"
-                alt="SEVA Team"
-              />
+           
+
+                <Lottie
+                animationData={about}
+                loop
+                autoplay
+                className="about__lottie lottie-icon"
+                />
+
 
             </div>
 
@@ -163,7 +218,7 @@ export default function About() {
 
         {/* MISSION VISION */}
 
-        <section className="mission-vision">
+        {/* <section className="mission-vision">
 
           <div className="container">
 
@@ -195,11 +250,11 @@ export default function About() {
 
           </div>
 
-        </section>
+        </section> */}
 
         {/* WHY SEVA */}
 
-        <section className="why-seva-about">
+        {/* <section className="why-seva-about">
 
           <div className="container">
 
@@ -231,7 +286,7 @@ export default function About() {
 
           </div>
 
-        </section>
+        </section> */}
 
         {/* VALUES */}
 
@@ -245,16 +300,16 @@ export default function About() {
               description="Our values shape every solution we create."
             />
 
-            <FeatureGrid
-              items={values}
-            />
+            {/* <FeatureGrid
+              cards={values}
+            /> */}
             <AboutMasonry
 
-leftCards={leftCards}
+                leftCards={leftCards}
 
-rightCards={rightCards}
+                rightCards={rightCards}
 
-/>
+                />
 
           </div>
 

@@ -3,24 +3,27 @@ import "./MasonryCard.scss";
 export default function MasonryCard({
 
     title,
-
     subtitle,
-
     description,
-
     badge,
-
     badges,
-
     image,
-
     graphic,
-
     button,
-
     className = "",
 
+    imagePosition = "bottom",
+    imageClass = "",
+
 }) {
+
+    const Image = image && (
+        <img
+            src={image}
+            alt={title}
+            className={`card-image ${imageClass}`}
+        />
+    );
 
     return (
 
@@ -32,13 +35,13 @@ export default function MasonryCard({
                 </span>
             )}
 
+            {imagePosition === "top" && Image}
+
             <div className="content">
 
                 <h2>{title}</h2>
 
-                {subtitle && (
-                    <h3>{subtitle}</h3>
-                )}
+                {subtitle && <h3>{subtitle}</h3>}
 
                 <p>{description}</p>
 
@@ -64,32 +67,19 @@ export default function MasonryCard({
             )}
 
             {button && (
-
-                <button>
-
-                    {button}
-
-                </button>
-
+                <button>{button}</button>
             )}
 
-            {image && (
-
-                <img
-                    src={image}
-                    alt=""
-                />
-
-            )}
+            {imagePosition === "bottom" && Image}
 
             {graphic && (
-
                 <div className="graphic">
 
                     {graphic}
 
-                </div>
+                    {imagePosition === "custom" && Image}
 
+                </div>
             )}
 
         </article>
