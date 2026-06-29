@@ -31,7 +31,7 @@ import {
         const trigger = ScrollTrigger.create({
           trigger: section,
       
-          start: "bottom 120%",
+          start: "bottom 110%",
       
           end: `+=${slides.length * 1500}`,
       

@@ -1,6 +1,6 @@
 import compliance from "@/assets/lottie/anim1.json";
 import audits from "@/assets/lottie/anim2.json";
-import incidents from "@/assets/lottie/anim31.json";
+import incidents from "@/assets/lottie/anim3.json";
 import reporting from "@/assets/lottie/anim4.json";
 
 const slides = [
