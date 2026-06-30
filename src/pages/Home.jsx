@@ -12,6 +12,8 @@ import BenefitsList from "@/components/BenefitsList/BenefitsList";
 import careAnimation from "@/assets/lottie/fealist-anim1.json";
 import reportAnimation from "@/assets/lottie/fealist-anim2.json";
 import mobileAnimation from "@/assets/lottie/fealist-anim3.json";
+import Approach from "@/components/Approach/Approach";
+import circuitBg from "@/assets/images/circuit-bg.png";
 export default function Home() {
   const benefits = [
 
@@ -52,6 +54,61 @@ export default function Home() {
       <Hero />
 
       <VideoSection />
+
+      <Approach
+
+    badge="Our Approach"
+
+    title="Our Approach"
+
+    description="Centralize your paper desk, automate staff credentialing, and ensure your agency is audit-ready 24/7."
+
+    description2="Preparing for state, federal, or internal audits means days of chasing down missing progress notes and paperwork."
+
+    buttonText="Explore More"
+
+    background={circuitBg}
+
+    nodes={[
+
+        {
+            text:"Designs",
+            className:"n1",
+        },
+
+        {
+            text:"Compliant",
+            className:"n2",
+        },
+
+        {
+            text:"Respite Care",
+            className:"n3",
+        },
+
+        {
+            text:"In Home Support",
+            className:"n4",
+        },
+
+        {
+            text:"Services",
+            className:"n5",
+        },
+
+        {
+            text:"Practical",
+            className:"n6",
+        },
+
+        {
+            text:"Day Programs",
+            className:"n7",
+        },
+
+    ]}
+
+/>
 
       <IManage />
 
